@@ -1,4 +1,5 @@
 import io.leetcode.tasks.NeetCodeBinarySearch;
+import io.leetcode.tasks.NeetCodeSlidingWindow;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +12,8 @@ public class Main {
 //                    {1,3,5,7},
 //                    {10,11,16,20},
 //                    {23,30,34,50}}, 5));
-        System.out.println(NeetCodeBinarySearch.searchShifted(new int[]{3,1}, 1));
+//        System.out.println(NeetCodeBinarySearch.searchShifted(new int[]{3,1}, 1));
+
+        System.out.println(NeetCodeSlidingWindow.checkInclusion("ab", "eidbaooo"));
     }
 }

@@ -98,5 +98,24 @@ public class NeetCodeSlidingWindow {
         }
         return matches == 26;
     }
+
+    /**
+     * 76. Minimum Window Substring
+     * Hard
+     * Given two strings s and t of lengths m and n respectively, return the minimum window
+     * substring
+     * of s such that every character in t (including duplicates) is included in the window.
+     * If there is no such substring, return the empty string "".
+     *
+     * Input: s = "ADOBECODEBANC", t = "ABC"
+     * Output: "BANC"
+     */
+//    public String minWindow(String s, String t) {
+//
+//    }
+
+
+
+
 }
 

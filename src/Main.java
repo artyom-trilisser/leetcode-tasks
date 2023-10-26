@@ -4,6 +4,9 @@ import io.leetcode.tasks.TimeMap;
 import io.leetcode.tasks.TopKFrequent;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,5 +60,22 @@ public class Main {
         System.out.printf(timeMap.get("love",20));
         System.out.printf(timeMap.get("love",25));
 
+    }
+
+    public static void printSortedStrings(String words) {
+//        Map<Character, List<String>> strings = new TreeMap<>();
+
+        Map<Character, List<String>> collected = Arrays.stream(words.split(";"))
+                .collect(Collectors.groupingBy(ch -> words.toLowerCase().charAt(0)));
+
+        System.out.println(collected);
+
+//        for (String word : words.split(";")) {
+//            var ch = word.toLowerCase().charAt(0);
+//            List<String> sameLetterWords = strings.getOrDefault(ch, new ArrayList<>());
+//            sameLetterWords.add(word);
+//            strings.put(ch, sameLetterWords);
+//        }
+//        System.out.println(strings);
     }
 }
